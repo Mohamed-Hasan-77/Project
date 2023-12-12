@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontAwesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BootStrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="./css/mainStyle.css">
+    <title> INSIGHTA </title>
+</head>
+
+<body>
+    <header class="d-flex ">
+        <div class="mainSideBar py-3 px-2  px-md-4 ">
+            <h1 class="text-center text-primary"> <a class="text-decoration-none" href="#"> INSIGHTA </a> </h1>
+
+            <h5 class="mt-5"> Explore </h5>
+            <ul class=" sidebarLinks d-flex flex-column list-unstyled ps-1 ">
+                <li class="mt-2 p-0 p-md-2 rounded"> <i class="fa-solid fa-clock"></i> Record <span
+                        class="d-none  d-md-inline"> insights </span> </li>
+                <li class="mt-2 p-0 p-md-2 rounded"> <i class="fa-solid fa-arrow-trend-up"></i> Trending <span
+                        class="d-none  d-md-inline"> insights </span>
+                </li>
+                <li class="mt-2 p-0 p-md-2 rounded"> <i class="fa-solid fa-star"></i> Favorite <span
+                        class="d-none  d-md-inline">
+                        insights </span> </li>
+            </ul>
+
+            <p class="text-end mt-4 text-primary"> <a class="text-decoration-none" href="#"> See all fields </a> </p>
+            <hr>
+
+
+            <ul class=" sidebarLinks d-flex flex-column list-unstyled ps-1 ">
+                <li class="mt-2 p-0 p-md-2 rounded"> <i class="fa-solid fa-circle-question"></i> Help </li>
+                <li class="mt-2 p-0 p-md-2 rounded"> <i class="fa-solid fa-comment"></i> <span
+                        class="d-none  d-md-inline"> Send </span> feedBack </li>
+            </ul>
+
+            <p class="mt-4 text-secondary text-center">&copy; 2023 insighta </p>
+        </div>
+
+
+        <div class="landing px-3 py-3">
+            <div class="pagination w-100 d-flex align-items-center">
+                INSIGHTA // User Profile <i class="fa-solid fa-caret-right ms-2"></i>
+            </div>
+
+            <nav class="bg-body-tertiary d-none d-lg-block shadow-lg">
+                <ul class=" navItemsUl w-100 d-flex justify-content-between list-unstyled ">
+                    <li class="py-4 px-3 text-center rounded"> Personal Data </li>
+                    <li class="py-4 px-3 text-center rounded"> Purchases/Downloads</li>
+                    <li class="py-4 px-3 text-center rounded active"> Favorites </li>
+                    <li class="py-4 px-3 text-center rounded"> Insighters Followed </li>
+                    <li class="py-4 px-3 text-center rounded"> Insighted Categories </li>
+                    <li class="py-4 px-3 text-center rounded"> Online Sessions </li>
+                    <li class="py-4 px-3 text-center rounded"> Change Password </li>
+                    <li class="py-4 px-3 text-center rounded text-danger"> Delete Account </li>
+                </ul>
+
+            </nav>
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary d-block d-lg-none shadow-lg">
+                <div class="container-fluid">
+                    <h6 class="navbar-brand  fs-5 fs-md-3 text-primary">Insighta </h6>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Personal Data</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Purchases/Downloads</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Favorites</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Insighters Followed</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Insighted Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Online Sessions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Change Password </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-danger" href="#">Delete Account</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+
+            <section class=" favMainSec pt-5  px-3 row text-center my-4 my-lg-0 justify-content-between">
+                <div
+                    class="userInfo col-12  col-lg-3 d-flex flex-column align-items-center justify-content-between shadow">
+                    <div class="userImg position-relative">
+                        <img src="./images/userPic.jpg" class="" alt="">
+                        <span class="position-absolute  bg-danger rounded-circle">
+                            <i class="fa-solid fa-camera text-white"></i>
+                        </span>
+                    </div>
+
+                    <h3 class="fs-2 my-2 "> Ahmed Ali</h3>
+                    <p class="fs-5 text-secondary"> Join Date: 25 Aug 2020</p>
+
+                    <div class="social row my-3">
+                        <div class="col-4 p-2 ">
+                            <p class=" shadow px-4 py-3 h-100 d-flex justify-content-center align-items-center"> <a
+                                    href="#">
+                                    <i class="fa-brands fa-facebook "></i>
+                                </a></p>
+                        </div>
+                        <div class="col-4 p-2">
+                            <p class=" shadow px-4 py-3 h-100 d-flex justify-content-center align-items-center"> <a
+                                    href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a></p>
+                        </div>
+                        <div class="col-4 p-2">
+                            <p class=" shadow px-4 py-3  h-100 d-flex justify-content-center align-items-center"> <a
+                                    href="#">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a></p>
+                        </div>
+                    </div>
+
+                    <div class="followed">
+                        <p class=""> followed insighters </p>
+                        <p> 45</p>
+                    </div>
+                </div>
+
+                <div class="Favitems col-12 col-lg-5 row position-relative">
+
+                    <div class="Favcards col-12 mt-3 col-lg-6 px-2  ">
+                        <div class="innerCard w-100 position-relative shadow ">
+                            <div class="classImg position-relative">
+                                <img src="./images/classroom-0724201.webp" class="img-fluid" alt="">
+                                <span class="position-absolute   bg-danger rounded-circle">
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
+                            </div>
+
+                            <div class="info p-2">
+                                <div class="date d-flex justify-content-between align-items-center">
+                                    <p> <i class="fa-regular fa-calendar-days"></i>
+                                        <span> 25 Aug 2020 </span>
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+
+                                <div class="nameInfo  d-flex">
+                                    <i class="fa-solid fa-user p-3 bg-primary text-white"></i>
+
+                                    <p class=" titleName ms-2 d-flex flex-column justify-content-center">
+                                        <span> insight title </span>
+                                        <span> Mona Elfayed</span>
+                                    </p>
+
+                                    <div class="free  position-absolute ">
+                                        Free
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="Favcards col-12 mt-3 col-lg-6 px-2  ">
+                        <div class="innerCard w-100 position-relative shadow ">
+                            <div class="classImg position-relative">
+                                <img src="./images/classroom-0724201.webp" class="img-fluid" alt="">
+                                <span class="position-absolute   bg-danger rounded-circle">
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
+                            </div>
+
+                            <div class="info p-2">
+                                <div class="date d-flex justify-content-between align-items-center">
+                                    <p> <i class="fa-regular fa-calendar-days"></i>
+                                        <span> 25 Aug 2020 </span>
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+
+                                <div class="nameInfo  d-flex">
+                                    <i class="fa-solid fa-user p-3 bg-primary text-white"></i>
+
+                                    <p class=" titleName ms-2 d-flex flex-column justify-content-center">
+                                        <span> insight title </span>
+                                        <span> Mona Elfayed</span>
+                                    </p>
+
+                                    <div class="free  position-absolute ">
+                                        Free
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="Favcards col-12 mt-3 col-lg-6 px-2  ">
+                        <div class="innerCard w-100 position-relative shadow ">
+                            <div class="classImg position-relative">
+                                <img src="./images/classroom-0724201.webp" class="img-fluid" alt="">
+                                <span class="position-absolute   bg-danger rounded-circle">
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
+                            </div>
+
+                            <div class="info p-2">
+                                <div class="date d-flex justify-content-between align-items-center">
+                                    <p> <i class="fa-regular fa-calendar-days"></i>
+                                        <span> 25 Aug 2020 </span>
+                                    </p>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+
+                                <div class="nameInfo  d-flex">
+                                    <i class="fa-solid fa-user p-3 bg-primary text-white"></i>
+
+                                    <p class=" titleName ms-2 d-flex flex-column justify-content-center">
+                                        <span> insight title </span>
+                                        <span> Mona Elfayed</span>
+                                    </p>
+
+                                    <div class="free  position-absolute ">
+                                        Free
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+                <div class="search col-12 col-lg-3 shadow mt-3 mt-lg-0">
+                    <form>
+                        <div class="tiltle">
+                            <h3 class="mt-3"> Search </h3>
+
+                            <hr class="my-3">
+
+                            <label for="serachText" class="form-label text-start w-100">Search Now </label>
+                            <input type="text" id="serachText" class="form-control">
+
+
+                            <label for="serachText" class="form-label text-start w-100 mt-3">Show </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected> All Favorite insights </option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+
+                            <label for="serachText" class="form-label text-start w-100 mt-3">Show </label>
+                            <div class="selctFrom d-flex">
+                                <select class="form-select me-2" aria-label="Default select example">
+                                    <option selected> From </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected> To </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+
+                            <button class="btn btn-primary w-100 mt-4"> Search Now </button>
+
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+
+        </div>
+    </header>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
